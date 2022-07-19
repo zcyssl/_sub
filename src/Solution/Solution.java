@@ -31,15 +31,15 @@ class Node {
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-      if(nums.length==1) return true;
-      Arrays.sort(nums);
-      int xp=nums[0];
-      for(int i=1;i<nums.length;i++) {
-          xp ^= nums[i];
-          if(xp==0) return false;
-          xp=nums[i];
+        if(nums.length==1) return true;
+        Arrays.sort(nums);
+        int xp=nums[0];
+        for(int i=1;i<nums.length;i++) {
+            xp ^= nums[i];
+            if(xp==0) return false;
+            xp=nums[i];
 
-      }
+        }
         return true;
     }
 }
