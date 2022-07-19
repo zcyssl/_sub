@@ -1,18 +1,7 @@
 package Solution;
 
 
-import com.sun.scenario.effect.impl.state.AccessHelper;
-
-import javax.management.openmbean.InvalidOpenTypeException;
-import java.util.*;
-import java.awt.Point;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Deque;
-import java.util.List;
-import java.util.concurrent.DelayQueue;
-import java.util.stream.Collectors;
 
 class TreeNode {
     int val;
@@ -38,7 +27,7 @@ class Node {
     public Node left;
     public Node right;
     public Node parent;
-};
+}
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {
@@ -49,6 +38,8 @@ class Solution {
           xp ^= nums[i];
           if(xp==0) return false;
           xp=nums[i];
+
       }
+        return true;
     }
 }
